@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunGroopWebApp", "RunGroopW
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunGroopsWebApp.Test", "RunGroopsWebApp.Test\RunGroopsWebApp.Test.csproj", "{1E157279-1789-482D-B555-F5D94F55DA89}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{076ABC38-E8A9-44C5-BEE2-48EDBA4E1FF3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF6CA8F1-5621-4488-A4B5-CCCA96E1A720}"
 	ProjectSection(SolutionItems) = preProject
-		Jenkinsfile.txt = Jenkinsfile.txt
+		..\..\..\..\azure-voting-app-redis-master\Jenkinsfile = ..\..\..\..\azure-voting-app-redis-master\Jenkinsfile
 	EndProjectSection
 EndProject
 Global
