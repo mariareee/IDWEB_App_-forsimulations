@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Verify Branch') {
+        stage ('Clean file') {
             steps {
-                echo "$GIT_BRANCH"
+                cleanWs()
             }
         }
     
