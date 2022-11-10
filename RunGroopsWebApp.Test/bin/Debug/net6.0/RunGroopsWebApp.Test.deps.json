@@ -10,8 +10,10 @@
         "dependencies": {
           "FakeItEasy": "7.3.1",
           "FluentAssertions": "6.8.0",
+          "JunitXml.TestLogger": "3.0.114",
           "Microsoft.NET.Test.Sdk": "17.1.0",
           "RunGroopWebApp": "1.0.0",
+          "XunitXml.TestLogger": "3.0.70",
           "coverlet.collector": "3.1.2",
           "xunit": "2.4.1",
           "xunit.runner.visualstudio": "2.4.3"
@@ -76,6 +78,7 @@
           }
         }
       },
+      "JunitXml.TestLogger/3.0.114": {},
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "dependencies": {
           "System.Text.Encodings.Web": "4.5.0"
@@ -1565,6 +1568,7 @@
         }
       },
       "xunit.runner.visualstudio/2.4.3": {},
+      "XunitXml.TestLogger/3.0.70": {},
       "RunGroopWebApp/1.0.0": {
         "dependencies": {
           "CloudinaryDotNet": "1.20.0",
@@ -1617,6 +1621,13 @@
       "sha512": "sha512-NfSlAG97wMxS48Ov+wQEhJITdn4bKrgtKrG4sCPrFBVKozpC57lQ2vzsPdxUOsPbfEgEQTMtvCDECxIlDBfgNA==",
       "path": "fluentassertions/6.8.0",
       "hashPath": "fluentassertions.6.8.0.nupkg.sha512"
+    },
+    "JunitXml.TestLogger/3.0.114": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f3MYONfGKol63+Azfm4lRKTvKe7IrJMbNoPCMel+YFD68i+dsipMeCj94IN2XtCbJpKRpB2Dh9S1o0bUF0w6mQ==",
+      "path": "junitxml.testlogger/3.0.114",
+      "hashPath": "junitxml.testlogger.3.0.114.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
       "type": "package",
@@ -2576,6 +2587,13 @@
       "sha512": "sha512-kZZSmOmKA8OBlAJaquPXnJJLM9RwQ27H7BMVqfMLUcTi9xHinWGJiWksa3D4NEtz0wZ/nxd2mogObvBgJKCRhQ==",
       "path": "xunit.runner.visualstudio/2.4.3",
       "hashPath": "xunit.runner.visualstudio.2.4.3.nupkg.sha512"
+    },
+    "XunitXml.TestLogger/3.0.70": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-11jHu5z9NH43lxFTFqRr30HmhO2d0THrJBIAV8AUOmFsfr4e+SVrkXbCyXBziRMOcKktpM6x5T+wbyrtSQPzjQ==",
+      "path": "xunitxml.testlogger/3.0.70",
+      "hashPath": "xunitxml.testlogger.3.0.70.nupkg.sha512"
     },
     "RunGroopWebApp/1.0.0": {
       "type": "project",

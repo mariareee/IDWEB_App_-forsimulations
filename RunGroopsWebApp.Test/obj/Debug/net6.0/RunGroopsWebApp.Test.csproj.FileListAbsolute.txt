@@ -143,3 +143,8 @@ C:\Users\User\Desktop\UTM\anul 3\IDWeb\RunGroopWebApp\RunGroopsWebApp.Test\bin\D
 C:\Users\User\Desktop\UTM\anul 3\IDWeb\RunGroopWebApp\RunGroopsWebApp.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\User\Desktop\UTM\anul 3\IDWeb\RunGroopWebApp\RunGroopsWebApp.Test\bin\Debug\net6.0\RunGroopWebApp.dll
 C:\Users\User\Desktop\UTM\anul 3\IDWeb\RunGroopWebApp\RunGroopsWebApp.Test\bin\Debug\net6.0\RunGroopWebApp.pdb
+C:\Users\User\Desktop\UTM\anul 3\IDWeb\RunGroopWebApp\RunGroopsWebApp.Test\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Extension.JUnit.Xml.TestLogger.dll
+C:\Users\User\Desktop\UTM\anul 3\IDWeb\RunGroopWebApp\RunGroopsWebApp.Test\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Extension.JUnit.Xml.TestAdapter.dll
+C:\Users\User\Desktop\UTM\anul 3\IDWeb\RunGroopWebApp\RunGroopsWebApp.Test\bin\Debug\net6.0\Spekt.TestLogger.dll
+C:\Users\User\Desktop\UTM\anul 3\IDWeb\RunGroopWebApp\RunGroopsWebApp.Test\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Extension.Xunit.Xml.TestLogger.dll
+C:\Users\User\Desktop\UTM\anul 3\IDWeb\RunGroopWebApp\RunGroopsWebApp.Test\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Extension.Xunit.Xml.TestAdapter.dll

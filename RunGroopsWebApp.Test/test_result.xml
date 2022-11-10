@@ -1,0 +1,16 @@
+<assemblies timestamp="11/10/2022 09:49:11">
+  <assembly name="C:\Users\User\Desktop\UTM\anul 3\IDWeb\RunGroopWebApp\RunGroopsWebApp.Test\bin\Debug\net6.0\RunGroopsWebApp.Test.dll" run-date="2022-11-10" run-time="09:49:11" total="3" passed="3" failed="0" skipped="0" time="3.176" errors="0">
+    <errors />
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for RunGroopWebApp.Tests.Controller.ClubControllerTests" time="0.140">
+      <test name="RunGroopWebApp.Tests.Controller.ClubControllerTests.ClubController_Detail_ReturnsSuccess" type="RunGroopWebApp.Tests.Controller.ClubControllerTests" method="ClubController_Detail_ReturnsSuccess" time="0.1244112" result="Pass">
+        <traits />
+      </test>
+      <test name="RunGroopWebApp.Tests.Controller.ClubControllerTests.ClubController_Index_ReturnsSuccess" type="RunGroopWebApp.Tests.Controller.ClubControllerTests" method="ClubController_Index_ReturnsSuccess" time="0.0065139" result="Pass">
+        <traits />
+      </test>
+      <test name="RunGroopWebApp.Tests.Controller.ClubControllerTests.ClubController_Create_Returns_Correct_Type" type="RunGroopWebApp.Tests.Controller.ClubControllerTests" method="ClubController_Create_Returns_Correct_Type" time="0.0090300" result="Pass">
+        <traits />
+      </test>
+    </collection>
+  </assembly>
+</assemblies>
