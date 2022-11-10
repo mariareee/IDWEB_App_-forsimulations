@@ -5,7 +5,12 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunGroopWebApp", "RunGroopWebApp\RunGroopWebApp.csproj", "{07EA4DB8-7D38-497E-B94E-5306C8E8B6CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunGroopsWebApp.Test", "RunGroopsWebApp.Test\RunGroopsWebApp.Test.csproj", "{1E157279-1789-482D-B555-F5D94F55DA89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunGroopsWebApp.Test", "RunGroopsWebApp.Test\RunGroopsWebApp.Test.csproj", "{1E157279-1789-482D-B555-F5D94F55DA89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{076ABC38-E8A9-44C5-BEE2-48EDBA4E1FF3}"
+	ProjectSection(SolutionItems) = preProject
+		Jenkinsfile.txt = Jenkinsfile.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
