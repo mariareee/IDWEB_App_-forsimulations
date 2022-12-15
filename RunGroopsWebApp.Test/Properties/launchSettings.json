@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "RunGroopsWebApp.Test": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    } 
+  }
+}

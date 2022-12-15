@@ -1,0 +1,25 @@
+version: '3.4'
+services:
+  db:
+    image: "mcr.microsoft.com/mssql/server:2019-latest"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=S3cur3P@ssW0rd!
+
+  dockersqlserver:
+    image: ${DOCKER_REGISTRY-}dockersqlserver
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    
+  rungroopwebapp:
+    container_name: wap
+    image: webapp
+    build:
+      context: .
+    ports:
+       - "8009:80"
+    depends_on: 
+       -  db
