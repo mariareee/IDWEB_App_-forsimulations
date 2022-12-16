@@ -1,25 +1,38 @@
-version: '3.4'
+version: '3'
 services:
   db:
-    image: "mcr.microsoft.com/mssql/server:2019-latest"
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: db
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=S3cur3P@ssW0rd!
-
-  dockersqlserver:
-    image: ${DOCKER_REGISTRY-}dockersqlserver
-    build:
-      context: .
-      dockerfile: Dockerfile
-    depends_on:
-      - db
+    volumes:
+      -  C:\Users\User\Desktop\db_volume:/var/opt/mssql/data  #modify for VM 
     
   rungroopwebapp:
-    container_name: wap
-    image: webapp
+    image: final
+    container_name: rungroopwebapp
+    restart: always
     build:
       context: .
     ports:
        - "8009:80"
     depends_on: 
        -  db
+
+  db-management:
+    image: sqlpad/sqlpad
+    container_name: sqlpad
+    ports:
+      - "3000:3000"
+    environment:
+      SQLPAD_ADMIN: 'admin@sqlpad.com'
+      SQLPAD_ADMIN_PASSWORD: 'admin'
+      SQLPAD_CONNECTIONS_mssqlserver_name: rungroopwebapp
+      SQLPAD_CONNECTIONS_mssqlserver_driver: sqlserver
+      SQLPAD_CONNECTIONS_mssqlserver_database: RunGroops
+      SQLPAD_CONNECTIONS_mssqlserver_username: sa
+      SQLPAD_CONNECTIONS_mssqlserver_password: S3cur3P@ssW0rd!
+    volumes:
+
+      -  C:\Users\User\Desktop\db_sqlpad:/var/lib/sqlpad  #modify for VM 
