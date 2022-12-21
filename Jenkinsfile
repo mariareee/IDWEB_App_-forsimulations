@@ -72,7 +72,7 @@ pipeline {
 
         stage('docker-build'){
         	steps {
-        		sh 'docker build -t marydockr/rungroopwebapp:latest ./RunGroopWebApp'
+        		bat 'docker build -t marydockr/rungroopwebapp:latest ./RunGroopWebApp'
         	}
     	}
 
