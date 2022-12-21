@@ -66,7 +66,19 @@ pipeline {
                     }
                 }
             }
-            
+
+
+            //testing the build
+
+        stage('docker-build'){
+        	steps {
+        		sh 'docker build -t marydockr/rungroopwebapp:latest ./RunGroopWebApp'
+        	}
+    	}
+
+    	
+
+
             stage('Test Integration') {
                 steps {
                     dir('../Results') {
@@ -74,28 +86,28 @@ pipeline {
                     }
                 }
                 
-				post {
-					success {
-						script {
-							ON_FAILURE_SEND_EMAIL = "false"
-						}
-					}
-					
-					failure {
-						script {
-							ON_SUCCESS_SEND_EMAIL = "false"
-						}
-					}
-					
-					cleanup {
-						script {
-							if(ON_SUCCESS_SEND_EMAIL == "true"){
-								emailext body: "SUCCESS!\nJOB_NAME: ${JOB_NAME}\nBUILD_NUMBER: ${BUILD_NUMBER}\nBUILD_URL: ${BUILD_URL}", subject: 'WebService Pipeline: SUCCESS', to: 'mariasadovoi@gmail.com'
-							} else if(ON_FAILURE_SEND_EMAIL == "true") {
-								emailext body: "FAILURE!\nJOB_NAME: ${JOB_NAME}\nBUILD_NUMBER: ${BUILD_NUMBER}\nBUILD_URL: ${BUILD_URL}", subject: 'WebService Pipeline: FAILURE', to: 'mariasadovoi@gmail.com'
-							}
-						}
-					}
+                post {
+                    success {
+                        script {
+                            ON_FAILURE_SEND_EMAIL = "false"
+                        }
+                    }
+                    
+                    failure {
+                        script {
+                            ON_SUCCESS_SEND_EMAIL = "false"
+                        }
+                    }
+                    
+                    cleanup {
+                        script {
+                            if(ON_SUCCESS_SEND_EMAIL == "true"){
+                                emailext body: "SUCCESS!\nJOB_NAME: ${JOB_NAME}\nBUILD_NUMBER: ${BUILD_NUMBER}\nBUILD_URL: ${BUILD_URL}", subject: 'WebService Pipeline: SUCCESS', to: 'mariasadovoi@gmail.com'
+                            } else if(ON_FAILURE_SEND_EMAIL == "true") {
+                                emailext body: "FAILURE!\nJOB_NAME: ${JOB_NAME}\nBUILD_NUMBER: ${BUILD_NUMBER}\nBUILD_URL: ${BUILD_URL}", subject: 'WebService Pipeline: FAILURE', to: 'mariasadovoi@gmail.com'
+                            }
+                        }
+                    }
                 
                 }
             }
