@@ -7,7 +7,7 @@ services:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=S3cur3P@ssW0rd!
     volumes:
-      -  C:\Users\User\Desktop\db_volume:/var/opt/mssql/data  #modify for VM 
+      -  /home/app/db/   #modified for VM 
     
   rungroopwebapp:
     image: final
@@ -19,6 +19,7 @@ services:
        - "8009:80"
     depends_on: 
        -  db
+    volumes: /home/app/src #added for VM
 
   db-management:
     image: sqlpad/sqlpad
@@ -34,5 +35,4 @@ services:
       SQLPAD_CONNECTIONS_mssqlserver_username: sa
       SQLPAD_CONNECTIONS_mssqlserver_password: S3cur3P@ssW0rd!
     volumes:
-
-      -  C:\Users\User\Desktop\db_sqlpad:/var/lib/sqlpad  #modify for VM 
+      - /home/app/sqlpad/   #modfied for VM 
