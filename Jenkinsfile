@@ -67,18 +67,6 @@ pipeline {
                 }
             }
 
-
-            //testing the build
-
-        stage('docker-build'){
-        	steps {
-        		bat 'docker build -t marydockr/rungroopwebapp:latest ./RunGroopWebApp'
-        	}
-    	}
-
-    	
-
-
             stage('Test Integration') {
                 steps {
                     dir('../Results') {
