@@ -19,8 +19,9 @@ services:
        - "8009:80"
     depends_on: 
        -  db
-    volumes: /home/publish/src #added for VM
-
+    volumes: 
+       -  /home/publish/src/ #added for VM
+       
   db-management:
     image: sqlpad/sqlpad
     container_name: sqlpad
